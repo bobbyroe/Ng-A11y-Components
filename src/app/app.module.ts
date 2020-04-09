@@ -5,17 +5,11 @@ import { AppComponent } from "./app.component";
 import { NoopAnimationsModule } from "@angular/platform-browser/animations";
 
 // material components
-import { MatSliderModule } from "@angular/material/slider";
-import { MatMenuModule } from "@angular/material/menu";
+// start here: https://styleguide.t-mobile.com/components/
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [
-    BrowserModule,
-    NoopAnimationsModule,
-    MatSliderModule,
-    MatMenuModule,
-  ],
+  imports: [BrowserModule, NoopAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
