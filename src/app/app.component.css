@@ -5,3 +5,8 @@ li,
 mat-radio-button {
   margin: 1rem;
 }
+
+.radio-datepicker {
+  display: flex;
+  flex-direction: column;
+}
