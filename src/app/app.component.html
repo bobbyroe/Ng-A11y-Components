@@ -1,23 +1,6 @@
 <header>
   <h1>Angular Material Components</h1>
 </header>
-<hr />
-<mat-radio-group class="radio-datepicker">
-  <mat-radio-button value="now">immediately</mat-radio-button>
-  <mat-radio-button value="choose date">
-    <mat-form-field>
-      <mat-label>Choose a date</mat-label>
-      <input matInput [matDatepicker]="nestedpicker" />
-      <mat-datepicker-toggle
-        matSuffix
-        [for]="nestedpicker"
-      ></mat-datepicker-toggle>
-      <mat-datepicker #nestedpicker></mat-datepicker>
-    </mat-form-field>
-  </mat-radio-button>
-  <mat-radio-button value="never">Never</mat-radio-button>
-</mat-radio-group>
-<hr />
 <ul>
   <li>
     <button mat-flat-button>Do Some Action!</button>
@@ -36,10 +19,46 @@
   </li>
   <li><mat-slide-toggle>Toggle me, bro!</mat-slide-toggle></li>
   <!-- -->
-  <li>Text Fields</li>
-
   <li>
-    Listbox with Inline Autocomplete (Autocomplete – MatAutocompeleModule)
+    <form class="zeroth-form">
+      <mat-form-field class="zeroth-full-width">
+        <mat-label for="reptile">Favorite Reptile</mat-label>
+        <input
+          matInput
+          placeholder="Ex. Anole"
+          value="Chameleon"
+          id="reptile"
+        />
+      </mat-form-field>
+    </form>
+  </li>
+  <li>
+    <mat-form-field appearance="fill">
+      <mat-label for="tf0">Textarea</mat-label>
+      <textarea id="tf0" matInput></textarea>
+    </mat-form-field>
+  </li>
+  <li>
+    <form class="wunth=form">
+      <mat-form-field class="wunth-full-width">
+        <input
+          type="text"
+          placeholder="Pick one"
+          aria-label="Number"
+          matInput
+          [formControl]="myControl"
+          [matAutocomplete]="auto"
+        />
+        <mat-autocomplete #auto="matAutocomplete">
+          <mat-option
+            *ngFor="let option of filteredOptions | async"
+            [value]="option"
+          >
+            {{ option }}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+    </form>
   </li>
 
   <li>Accordion Expander</li>
