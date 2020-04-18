@@ -15,6 +15,7 @@ import { MatDatepickerModule } from "@angular/material/datepicker";
 import { MatNativeDateModule } from "@angular/material/core";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { MatAutocompleteModule } from "@angular/material/autocomplete";
+import { MatExpansionModule } from "@angular/material/expansion";
 
 @NgModule({
   declarations: [AppComponent],
@@ -32,6 +33,7 @@ import { MatAutocompleteModule } from "@angular/material/autocomplete";
     MatAutocompleteModule,
     FormsModule,
     ReactiveFormsModule,
+    MatExpansionModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
