@@ -1,7 +1,7 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 
-import { AppComponent } from "./app.component";
+import { AppComponent, DialogComponent } from "./app.component";
 import { NoopAnimationsModule } from "@angular/platform-browser/animations";
 
 // material components
@@ -16,9 +16,11 @@ import { MatNativeDateModule } from "@angular/material/core";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { MatAutocompleteModule } from "@angular/material/autocomplete";
 import { MatExpansionModule } from "@angular/material/expansion";
+import { MatDialogModule } from "@angular/material/dialog";
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, DialogComponent],
+  entryComponents: [DialogComponent],
   imports: [
     BrowserModule,
     NoopAnimationsModule,
@@ -34,6 +36,7 @@ import { MatExpansionModule } from "@angular/material/expansion";
     FormsModule,
     ReactiveFormsModule,
     MatExpansionModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
