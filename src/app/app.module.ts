@@ -2,7 +2,7 @@ import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 
 import { AppComponent, DialogComponent } from "./app.component";
-import { NoopAnimationsModule } from "@angular/platform-browser/animations";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 // material components
 import { MatButtonModule } from "@angular/material/button";
@@ -17,13 +17,14 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { MatAutocompleteModule } from "@angular/material/autocomplete";
 import { MatExpansionModule } from "@angular/material/expansion";
 import { MatDialogModule } from "@angular/material/dialog";
+import { MatProgressBarModule } from "@angular/material/progress-bar";
 
 @NgModule({
   declarations: [AppComponent, DialogComponent],
   entryComponents: [DialogComponent],
   imports: [
     BrowserModule,
-    NoopAnimationsModule,
+    BrowserAnimationsModule,
     MatButtonModule,
     MatCheckboxModule,
     MatRadioModule,
@@ -37,6 +38,7 @@ import { MatDialogModule } from "@angular/material/dialog";
     ReactiveFormsModule,
     MatExpansionModule,
     MatDialogModule,
+    MatProgressBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -10,6 +10,7 @@ mat-radio-button {
   display: flex;
   flex-direction: column;
 }
-#accordion-container {
+#accordion-container,
+#progress-bar-container {
   width: 40rem;
 }
