@@ -3,12 +3,15 @@
 </header>
 <ul>
   <li>
+    <h2>Button</h2>
     <button mat-flat-button>Do Some Action!</button>
   </li>
   <li>
+    <h2>Checkbox</h2>
     <mat-checkbox>Check me, brah!</mat-checkbox>
   </li>
   <li>
+    <h2>Radio Button</h2>
     <mat-radio-group>
       <mat-radio-button value="Alligator">Alligator</mat-radio-button>
       <mat-radio-button value="Boa Constrictor"
@@ -17,9 +20,12 @@
       <mat-radio-button value="Crocodile">Crocodile</mat-radio-button>
     </mat-radio-group>
   </li>
-  <li><mat-slide-toggle>Toggle me, bro!</mat-slide-toggle></li>
-  <!-- -->
   <li>
+    <h2>Slide toggle</h2>
+    <mat-slide-toggle>Toggle me, bro!</mat-slide-toggle>
+  </li>
+  <li>
+    <h2>Form field</h2>
     <form class="zeroth-form">
       <mat-form-field class="zeroth-full-width">
         <mat-label for="reptile">Favorite Reptile</mat-label>
@@ -33,12 +39,14 @@
     </form>
   </li>
   <li>
+    <h2>Textarea</h2>
     <mat-form-field appearance="fill">
       <mat-label for="tf0">Textarea</mat-label>
       <textarea id="tf0" matInput></textarea>
     </mat-form-field>
   </li>
   <li>
+    <h2>Autocomplete</h2>
     <form class="wunth=form">
       <mat-form-field class="wunth-full-width">
         <input
@@ -62,6 +70,7 @@
   </li>
 
   <li id="accordion-container">
+    <h2>Accordion</h2>
     <mat-accordion>
       <mat-expansion-panel>
         <mat-expansion-panel-header>
@@ -93,6 +102,7 @@
   </li>
 
   <li>
+    <h2>Pagination</h2>
     <a href="https://styleguide.t-mobile.com/components/pagination/examples"
       >Pagination</a
     >
@@ -100,19 +110,31 @@
   </li>
 
   <li>
+    <h2>Dialog</h2>
     <button mat-raised-button (click)="openDialog()">Open Dialog</button>
   </li>
 
   <li id="progress-bar-container">
+    <h2>Progress bar</h2>
     <mat-progress-bar mode="indeterminate"></mat-progress-bar>
   </li>
 
-  <li>Tabs</li>
-
-  <li>Tooltip</li>
-
-  <li>Spinner (also see Progress Bar)</li>
   <li>
+    <h2>Tabs</h2>
+    Tabs
+  </li>
+
+  <li>
+    <h2>Tooltips</h2>
+    Tooltip
+  </li>
+
+  <li>
+    <h2>Spinner</h2>
+    Spinner (also see Progress Bar)
+  </li>
+  <li>
+    <h2>Date picker</h2>
     <mat-form-field>
       <mat-label for="date-picker">Choose a date</mat-label>
       <input matInput [matDatepicker]="picker" id="date-picker" />
