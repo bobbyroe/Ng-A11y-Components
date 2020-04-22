@@ -8,7 +8,7 @@
   </li>
   <li>
     <h2>Checkbox</h2>
-    <mat-checkbox>Check me, brah!</mat-checkbox>
+    <mat-checkbox>Reptiles are awesome!</mat-checkbox>
   </li>
   <li>
     <h2>Radio Button</h2>
@@ -22,7 +22,7 @@
   </li>
   <li>
     <h2>Slide toggle</h2>
-    <mat-slide-toggle>Toggle me, bro!</mat-slide-toggle>
+    <mat-slide-toggle>I love Komodo dragons</mat-slide-toggle>
   </li>
   <li>
     <h2>Form field</h2>
@@ -31,7 +31,7 @@
         <mat-label for="reptile">Favorite Reptile</mat-label>
         <input
           matInput
-          placeholder="Ex. Anole"
+          placeholder="Example: Anole"
           value="Chameleon"
           id="reptile"
         />
@@ -52,11 +52,12 @@
         <input
           type="text"
           placeholder="Pick one"
-          aria-label="Number"
+          aria-label="Pick a number"
           matInput
           [formControl]="myControl"
           [matAutocomplete]="auto"
         />
+        <!-- Voiceover support for combobox widget: https://forums.developer.apple.com/thread/119125 -->
         <mat-autocomplete #auto="matAutocomplete">
           <mat-option
             *ngFor="let option of filteredOptions | async"
