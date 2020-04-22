@@ -18,6 +18,8 @@ import { MatAutocompleteModule } from "@angular/material/autocomplete";
 import { MatExpansionModule } from "@angular/material/expansion";
 import { MatDialogModule } from "@angular/material/dialog";
 import { MatProgressBarModule } from "@angular/material/progress-bar";
+import { MatTabsModule } from "@angular/material/tabs";
+import { MatTooltipModule } from "@angular/material/tooltip";
 
 @NgModule({
   declarations: [AppComponent, DialogComponent],
@@ -39,6 +41,8 @@ import { MatProgressBarModule } from "@angular/material/progress-bar";
     MatExpansionModule,
     MatDialogModule,
     MatProgressBarModule,
+    MatTabsModule,
+    MatTooltipModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

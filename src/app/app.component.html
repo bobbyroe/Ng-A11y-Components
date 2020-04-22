@@ -119,14 +119,25 @@
     <mat-progress-bar mode="indeterminate"></mat-progress-bar>
   </li>
 
-  <li>
+  <li id="tabs-container">
     <h2>Tabs</h2>
-    Tabs
+    <mat-tab-group>
+      <mat-tab label="First">Butter</mat-tab>
+      <mat-tab label="Second">Salt</mat-tab>
+      <mat-tab label="Third">Pepper</mat-tab>
+      <mat-tab label="Fourth">Garlic</mat-tab>
+    </mat-tab-group>
   </li>
 
   <li>
     <h2>Tooltips</h2>
-    Tooltip
+    <button
+      mat-raised-button
+      matTooltip="Click to do some action"
+      aria-label="example which displays a tooltip on focus"
+    >
+      Action
+    </button>
   </li>
 
   <li>

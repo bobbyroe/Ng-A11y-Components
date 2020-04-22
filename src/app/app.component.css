@@ -11,6 +11,11 @@ mat-radio-button {
   flex-direction: column;
 }
 #accordion-container,
-#progress-bar-container {
+#progress-bar-container,
+#tabs-container {
   width: 40rem;
+}
+h2 {
+  color: #505050;
+  font-size: 1.25rem;
 }
