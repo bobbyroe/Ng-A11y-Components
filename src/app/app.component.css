@@ -11,6 +11,7 @@ li {
   margin: 1rem;
   width: 40rem;
   margin: 0 auto;
+  position: relative;
 }
 mat-radio-button {
   margin: 1rem;
