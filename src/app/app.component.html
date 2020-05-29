@@ -143,9 +143,32 @@
   </li>
 
   <li>
+    <h2>Select / Dropdown</h2>
+    <mat-form-field>
+      <mat-label>Favorite Treats</mat-label>
+      <mat-select (keyup)="onKey($event)">
+        <mat-option *ngFor="let treat of treats" [value]="treat">
+          {{ treat }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </li>
+  <li>
+    <h2>Native Select / Dropdown</h2>
+    <mat-form-field>
+      <mat-label>Favorite Treats</mat-label>
+      <select matNativeControl>
+        <option value="default">--select--</option>
+        <option *ngFor="let treat of treats" [value]="treat">
+          {{ treat }}
+        </option>
+      </select>
+    </mat-form-field>
+  </li>
+  <!-- <li>
     <h2>Spinner</h2>
     <mat-spinner></mat-spinner>
-  </li>
+  </li> -->
   <li>
     <h2>Date picker</h2>
     <mat-form-field>

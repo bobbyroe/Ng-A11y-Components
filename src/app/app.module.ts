@@ -21,7 +21,8 @@ import { MatProgressBarModule } from "@angular/material/progress-bar";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { MatTabsModule } from "@angular/material/tabs";
 import { MatTooltipModule } from "@angular/material/tooltip";
-import { DocsLinkComponent } from './docs-link.component';
+import { DocsLinkComponent } from "./docs-link.component";
+import { MatSelectModule } from "@angular/material/select";
 
 @NgModule({
   declarations: [AppComponent, DialogComponent, DocsLinkComponent],
@@ -46,6 +47,7 @@ import { DocsLinkComponent } from './docs-link.component';
     MatProgressSpinnerModule,
     MatTabsModule,
     MatTooltipModule,
+    MatSelectModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
