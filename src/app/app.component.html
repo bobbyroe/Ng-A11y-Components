@@ -8,10 +8,6 @@
     <app-docs-link></app-docs-link>
   </li>
   <li>
-    <h2>Checkbox</h2>
-    <mat-checkbox>Reptiles are awesome!</mat-checkbox>
-  </li>
-  <li>
     <h2>Radio Button</h2>
     <mat-radio-group>
       <mat-radio-button value="Alligator">Alligator</mat-radio-button>
@@ -36,37 +32,6 @@
           value="Chameleon"
           id="reptile"
         />
-      </mat-form-field>
-    </form>
-  </li>
-  <li>
-    <h2>Textarea</h2>
-    <mat-form-field appearance="fill">
-      <mat-label for="tf0">Textarea</mat-label>
-      <textarea id="tf0" matInput></textarea>
-    </mat-form-field>
-  </li>
-  <li>
-    <h2>Autocomplete</h2>
-    <form class="wunth=form">
-      <mat-form-field class="wunth-full-width">
-        <input
-          type="text"
-          placeholder="Pick one"
-          aria-label="Pick a number"
-          matInput
-          [formControl]="myControl"
-          [matAutocomplete]="auto"
-        />
-        <!-- Voiceover support for combobox widget: https://forums.developer.apple.com/thread/119125 -->
-        <mat-autocomplete #auto="matAutocomplete">
-          <mat-option
-            *ngFor="let option of filteredOptions | async"
-            [value]="option"
-          >
-            {{ option }}
-          </mat-option>
-        </mat-autocomplete>
       </mat-form-field>
     </form>
   </li>
@@ -103,24 +68,6 @@
     </mat-accordion>
   </li>
 
-  <li>
-    <h2>Pagination</h2>
-    <a href="https://styleguide.t-mobile.com/components/pagination/examples"
-      >Pagination</a
-    >
-    (?)
-  </li>
-
-  <li>
-    <h2>Dialog</h2>
-    <button mat-raised-button (click)="openDialog()">Open Dialog</button>
-  </li>
-
-  <li id="progress-bar-container">
-    <h2>Progress bar</h2>
-    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
-  </li>
-
   <li id="tabs-container">
     <h2>Tabs</h2>
     <mat-tab-group>
@@ -129,17 +76,6 @@
       <mat-tab label="Third">Pepper</mat-tab>
       <mat-tab label="Fourth">Garlic</mat-tab>
     </mat-tab-group>
-  </li>
-
-  <li>
-    <h2>Tooltips</h2>
-    <button
-      mat-raised-button
-      matTooltip="Click to do some action"
-      aria-label="example which displays a tooltip on focus"
-    >
-      Action
-    </button>
   </li>
 
   <li>
@@ -153,32 +89,6 @@
       </mat-select>
     </mat-form-field>
   </li>
-  <li>
-    <h2>Native Select / Dropdown</h2>
-    <mat-form-field>
-      <mat-label>Favorite Treats</mat-label>
-      <select matNativeControl>
-        <option value="default">--select--</option>
-        <option *ngFor="let treat of treats" [value]="treat">
-          {{ treat }}
-        </option>
-      </select>
-    </mat-form-field>
-  </li>
-  <!-- <li>
-    <h2>Spinner</h2>
-    <mat-spinner></mat-spinner>
-  </li> -->
-  <li>
-    <h2>Date picker</h2>
-    <mat-form-field>
-      <mat-label for="date-picker">Choose a date</mat-label>
-      <input matInput [matDatepicker]="picker" id="date-picker" />
-      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-      <mat-datepicker #picker></mat-datepicker>
-    </mat-form-field>
-  </li>
-  <li>&nbsp;</li>
   <li>&nbsp;</li>
   <!-- -->
 </ul>
