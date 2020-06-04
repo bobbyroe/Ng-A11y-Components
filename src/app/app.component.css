@@ -1,6 +1,20 @@
+@font-face {
+  font-family: Tele-Grotesk-Ultr;
+  src: url("../assets/Tele-Grotesk-Ultr/Tele-Grotesk-Ultr.ttf");
+}
+@font-face {
+  font-family: Tele-Grotesk-Fett;
+  src: url("../assets/Tele-Grotesk-Fett/Tele-Grotesk-Fett.ttf");
+}
+@font-face {
+  font-family: Tele-Grotesk-Norm;
+  src: url("../assets/Tele-Grotesk-Norm/Tele-Grotesk-Norm.ttf");
+}
+
 h1 {
-  margin: 1rem;
+  margin: 1.5rem;
   text-align: center;
+  font-family: "Tele-Grotesk-Fett";
 }
 ul {
   list-style: none;
@@ -13,20 +27,18 @@ li {
   margin: 0 auto;
   position: relative;
 }
-mat-radio-button {
-  margin: 1rem;
-}
-li:nth-child(odd) {
+
+/* li:nth-child(odd) {
   background-color: rgba(0, 0, 0, 0.1);
-}
-.radio-datepicker {
-  display: flex;
-  flex-direction: column;
+} */
+button {
+  background-color: #e20074;
 }
 h2 {
-  color: #505050;
-  font-size: 1.25rem;
-}
-li:nth-child(odd) h2 {
+  font-family: "Tele-Grotesk-Fett";
   color: #000;
+  font-size: 1.5rem;
 }
+/* li:nth-child(odd) h2 {
+  color: #000;
+} */

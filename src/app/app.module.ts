@@ -1,7 +1,7 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 
-import { AppComponent, DialogComponent } from "./app.component";
+import { AppComponent } from "./app.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 // material components
@@ -25,8 +25,8 @@ import { DocsLinkComponent } from "./docs-link.component";
 import { MatSelectModule } from "@angular/material/select";
 
 @NgModule({
-  declarations: [AppComponent, DialogComponent, DocsLinkComponent],
-  entryComponents: [DialogComponent],
+  declarations: [AppComponent, DocsLinkComponent],
+  entryComponents: [],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
