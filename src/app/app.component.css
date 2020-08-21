@@ -1,6 +1,10 @@
 h1 {
-  margin: 1rem;
+  margin: 2rem;
   text-align: center;
+}
+header {
+  width: 40rem;
+  margin: 0 auto 2rem;
 }
 ul {
   list-style: none;
