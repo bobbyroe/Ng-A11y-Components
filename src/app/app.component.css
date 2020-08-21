@@ -30,3 +30,12 @@ h2 {
 li:nth-child(odd) h2 {
   color: #000;
 }
+/* Tone down the animation to avoid vestibular motion triggers like scaling or panning large objects. */
+@media (prefers-reduced-motion) {
+  h1 {
+    color: red;
+  }
+  .mat-button-ripple.mat-ripple {
+    display: none;
+  }
+}
