@@ -121,6 +121,30 @@
     <button mat-raised-button (click)="openDialog()">Open Dialog</button>
   </li>
 
+  <li>
+    <h2>SuperGLUE Dialog</h2>
+    <!-- https://styleguide.t-mobile.com/components/modals/examples -->
+    <mat-dialog-container
+      aria-modal="true"
+      id="mat-dialog-1"
+      role="dialog"
+      aria-labelledby="mat-dialog-title-1"
+    >
+      <!-- <dialog-content-example-dialog> -->
+      <div>
+        <!-- temp -->
+        <h2 class="mat-dialog-title" id="mat-dialog-title-1">
+          Install Angular
+        </h2>
+        <!-- vs --->
+        <div class="mat-dialog-title" id="mat-dialog-title-1">
+          <h5>This is my title</h5>
+        </div>
+        <!-- </dialog-content-example-dialog> -->
+      </div>
+      <!-- temp -->
+    </mat-dialog-container>
+  </li>
   <li id="progress-bar-container">
     <h2>Progress bar</h2>
     <mat-progress-bar mode="indeterminate"></mat-progress-bar>
